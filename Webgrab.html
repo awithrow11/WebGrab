@@ -10,10 +10,14 @@
   <style>
     #contentdiv {height: 1000px; width: 600px; background-color: #339933;}
     body {background-color: #00CCFF;}
+    #innerwidgetdiv {height: 200px; width: 400px; background-color: #FF6699;}
   </style>
     <div id="contentdiv">
-      <div>
-        
+      <div id="innerwidgetdiv">
+        <form name="input" action="html_form_action.asp" method="get">
+          Keyword: <input type="text" name="user">
+          <input type="submit" value="submit">
+        </form>
       </div>
     </div>
 </body>
