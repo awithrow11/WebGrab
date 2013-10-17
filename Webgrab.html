@@ -12,18 +12,22 @@
     #contentdiv {height: 1000px; width: 600px; background-color: #339933; margin-left: auto; margin-right: auto;}
     body {background-color: #00CCFF;}
     #innerwidgetdiv {height: 200px; width: 400px; background-color: #FF6699; margin-left: auto; margin-right: auto;}
+	button {height: 100px; width: 100px;}
   </style>
   <script>
-    function promptkeyword(){
-      var r = prompt("Enter keyword here:")
-      if (r="Minecraft")
-      document.write("http://www.minecraft.net")
-    }
+	function getkey(){
+	var r = prompt("Enter keyword here:")
+	if (r = "Minecraft"){
+		document.write("http://www.minecraft.net")
+	}
+	else{
+	document.write("We didn't find any website domains that matched your keyword.")
+	}
+	}
   </script>
     <div id="contentdiv">
       <div id="innerwidgetdiv">
-        <button onclick="promptkeyword">Input Keyword</button>
-        </form>
+        <button onclick="getkey()">Enter Keyword:</button>
       </div>
     </div>
 </body>
