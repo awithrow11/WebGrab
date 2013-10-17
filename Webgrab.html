@@ -14,12 +14,15 @@
     #innerwidgetdiv {height: 200px; width: 400px; background-color: #FF6699; margin-left: auto; margin-right: auto;}
   </style>
   <script>
+    function promptkeyword(){
+      var r = prompt("Enter keyword here:")
+      if (r="Minecraft")
+      document.write("http://www.minecraft.net")
+    }
   </script>
     <div id="contentdiv">
       <div id="innerwidgetdiv">
-        <form name="input" action="html_form_action.asp" method="get">
-          Keyword: <input type="text" name="user">
-          <input type="submit" value="submit">
+        <button onclick="promptkeyword">Input Keyword</button>
         </form>
       </div>
     </div>
